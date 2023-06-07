@@ -1,0 +1,10 @@
+Builder (Construtor): separa a construção de um objeto complexo de sua representação, permitindo a criação passo a passo.
+
+O padrão de projeto Builder é um padrão de criação que separa a construção de um objeto complexo de sua representação, 
+permitindo a criação passo a passo. Ele fornece uma maneira mais flexível de criar objetos, permitindo diferentes 
+configurações e variações sem poluir o construtor com muitos parâmetros.
+
+Vamos supor que estamos desenvolvendo um sistema de construção de casas e queremos criar objetos "Casa" com diferentes 
+configurações, como número de quartos, tamanho do jardim, etc.
+
+1º - Definir a classe "Casa" que desejamos construir:
