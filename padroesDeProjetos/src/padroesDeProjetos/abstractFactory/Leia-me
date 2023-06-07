@@ -11,3 +11,11 @@ diferentes: heróis e monstros.
 1º - Vamos definir as interfaces para os personagens e facções:
 
 2º - Implementar as classes concretas para cada personagem e fábrica.
+
+3º - Agora, podemos usar as fábricas abstratas para criar personagens sem se preocupar com suas implementações 
+     específicas.
+     
+O padrão Abstract Factory permite que as fábricas abstratas (FabricaHerois e FabricaMonstros) 
+criem personagens (Guerreiro, Mago, Orc, Feiticeiro) sem expor as classes concretas desses personagens. Isso torna 
+o código mais flexível e fácil de manter, pois podemos trocar de facção ou adicionar novos personagens sem modificar 
+o código que os utiliza.

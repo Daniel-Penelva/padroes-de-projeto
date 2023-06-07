@@ -18,7 +18,4 @@ public class FabricaMonstrosImpl implements FabricaMonstros {
 	public Personagem criarFeiticeiro() {
 		return new FeiticeiroMonstro();
 	}
-
-	
-
 }
