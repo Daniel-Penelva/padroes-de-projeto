@@ -10,3 +10,14 @@ configurações, como número de quartos, tamanho do jardim, etc.
 1º - Definir a classe "Casa" que desejamos construir.
 
 2º - Criando a classe Builder para a construção da Casa.
+
+3º - Agora, podemos usar o builder para criar objetos Casa de forma flexível.
+
+O padrão Builder permite que criemos objetos Casa de forma flexível e passo a passo. O Builder (CasaBuilder) possui 
+métodos para configurar os atributos opcionais (como número de quartos e tamanho do jardim) e retorna a própria 
+instância do builder, permitindo a construção encadeada (chaining) dos métodos. No final, chamamos o método 
+construir() para obter o objeto Casa com as configurações desejadas.
+
+O padrão Builder é especialmente útil quando um objeto possui muitos atributos opcionais ou quando a criação do objeto 
+envolve várias etapas complexas. Ele simplifica a criação e permite a reutilização do código de configuração.
+
