@@ -7,4 +7,6 @@ configurações e variações sem poluir o construtor com muitos parâmetros.
 Vamos supor que estamos desenvolvendo um sistema de construção de casas e queremos criar objetos "Casa" com diferentes 
 configurações, como número de quartos, tamanho do jardim, etc.
 
-1º - Definir a classe "Casa" que desejamos construir:
+1º - Definir a classe "Casa" que desejamos construir.
+
+2º - Criando a classe Builder para a construção da Casa.
