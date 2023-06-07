@@ -1,0 +1,5 @@
+Vou fornecer um exemplo em Java para ilustrar o padrão Abstract Factory. Vamos supor que estamos desenvolvendo um 
+jogo de RPG e precisamos criar diferentes tipos de personagens, como guerreiros e magos, para duas facções 
+diferentes: heróis e monstros.
+
+1º - Vamos definir as interfaces para os personagens e facções:
