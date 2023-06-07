@@ -1,5 +1,13 @@
+Abstract Factory (Fábrica Abstrata): fornece uma interface para criar famílias de objetos relacionados sem especificar 
+suas classes concretas.
+O padrão de projeto Abstract Factory (Fábrica Abstrata) é um padrão de criação que fornece uma interface para criar 
+famílias de objetos relacionados sem especificar suas classes concretas. Ele permite que você crie objetos de diferentes 
+tipos, mas relacionados, sem se preocupar com as classes específicas desses objetos.
+
 Vou fornecer um exemplo em Java para ilustrar o padrão Abstract Factory. Vamos supor que estamos desenvolvendo um 
 jogo de RPG e precisamos criar diferentes tipos de personagens, como guerreiros e magos, para duas facções 
 diferentes: heróis e monstros.
 
 1º - Vamos definir as interfaces para os personagens e facções:
+
+2º - Implementar as classes concretas para cada personagem e fábrica.
