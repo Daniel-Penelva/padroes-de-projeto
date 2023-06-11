@@ -9,3 +9,18 @@ célula existente.
 
 1º - Vamos definir a classe "Celula" que representa uma célula. A classe Celula implementa a interface Cloneable, que é 
      necessária para habilitar a clonagem. Ela possui um método clone() que faz a clonagem do objeto.
+     
+2º - Criando uma classe para demonstrar o uso do padrão Prototype.
+
+Criamos um objeto Celula chamado celulaOriginal com o tipo "Célula Original". Em seguida, utilizamos o método clone() 
+para criar uma cópia da célula original na variável celulaClone. Modificamos o tipo da célula clonada para "Célula 
+Clonada" e imprimimos o tipo das duas células para verificar que são distintas.
+
+O padrão Prototype permite criar uma nova célula duplicando uma célula existente, evitando a criação de um objeto do zero. 
+Isso pode ser útil quando a criação de uma célula é uma operação complexa e cara em termos de recursos.
+
+É importante mencionar que o método clone() da classe Object faz uma clonagem superficial (shallow clone), ou seja, ele 
+cria uma nova instância da classe Celula, mas os atributos são copiados por referência. Se a classe Celula possuir 
+atributos mutáveis, pode ser necessário implementar uma clonagem profunda (deep clone) para garantir que os objetos 
+internos sejam copiados corretamente.
+
