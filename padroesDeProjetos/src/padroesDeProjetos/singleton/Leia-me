@@ -1,0 +1,13 @@
+Singleton garante que uma classe tenha apenas uma instância e fornece um ponto de acesso global a ela.
+
+O padrão de projeto Singleton é um padrão de criação que garante que uma classe tenha apenas uma instância e fornece um 
+ponto de acesso global para essa instância. Ele é útil quando precisamos ter um único objeto compartilhado por todo o 
+sistema.
+
+Vamos supor que estamos desenvolvendo um sistema de configurações e queremos ter uma classe que represente as configurações 
+globais do sistema, garantindo que apenas uma instância dessa classe exista.
+
+1º - Vamos criar a classe Singleton que implementa o padrão. Nessa implementação, a classe Singleton possui um construtor 
+     privado para evitar a criação direta de instâncias. Ela possui um método estático getInstance() que retorna a única 
+     instância da classe. Se a instância ainda não existe, o método getInstance() cria uma nova instância; caso contrário, 
+     retorna a instância existente.
