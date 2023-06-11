@@ -11,3 +11,19 @@ globais do sistema, garantindo que apenas uma instância dessa classe exista.
      privado para evitar a criação direta de instâncias. Ela possui um método estático getInstance() que retorna a única 
      instância da classe. Se a instância ainda não existe, o método getInstance() cria uma nova instância; caso contrário, 
      retorna a instância existente.
+     
+2º - Vamos utilizar a classe Singleton em um exemplo.
+
+Utilizamos o método getInstance() da classe Singleton para obter a instância única da classe. Em seguida, acessamos e 
+atualizamos a configuração dessa instância. Por fim, obtemos uma nova referência para a instância utilizando novamente o 
+método getInstance() e verificamos que a configuração atualizada é a mesma.
+
+O padrão Singleton garante que apenas uma instância da classe Singleton exista no sistema, permitindo um ponto de acesso 
+global para essa instância. Isso é útil em situações em que precisamos compartilhar um objeto único entre várias partes do 
+sistema, como configurações, conexões de banco de dados, caches, entre outros.
+
+É importante mencionar que a implementação apresentada é um exemplo básico de Singleton e não é thread-safe. Se houver 
+múltiplas threads acessando e modificando a instância, podem ocorrer problemas de concorrência. Para garantir a thread-safety, 
+existem várias abordagens, como o uso de synchronized, volatile, ou a utilização de uma inicialização preguiçosa 
+segura (lazy initialization) com uso de blocos synchronized.
+
