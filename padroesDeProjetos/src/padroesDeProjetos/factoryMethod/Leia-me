@@ -1,0 +1,12 @@
+Factory Method (Método de Fábrica): define uma interface para criar um objeto, mas permite que as subclasses decidam qual 
+classe concreta instanciar.
+
+ O padrão de projeto Factory Method (Método de Fábrica) é um padrão de criação que fornece uma interface para criar objetos, 
+ mas permite que as subclasses decidam qual classe concreta instanciar. Ele encapsula a lógica de criação de objetos em uma 
+ classe separada, chamada de fábrica, e permite a extensão fácil para criar diferentes tipos de objetos.
+ 
+Vamos supor que estamos desenvolvendo um sistema de transporte e queremos criar diferentes tipos de veículos, como carros e 
+bicicletas.
+
+1º - Vamos definir a interface "Veiculo" que representa os veículos.
+ 
