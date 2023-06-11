@@ -11,3 +11,5 @@ bicicletas.
 1º - Vamos definir a interface "Veiculo" que representa os veículos.
  
 2º - Vamos criar as classes concretas para os veículos: Carro e Bicicleta.
+
+3º - Vamos criar a classe abstrata "FabricaVeiculo" que define o método factoryMethod() que será implementado pelas subclasses.
