@@ -1,0 +1,11 @@
+Prototype permite a criação de novos objetos a partir de um objeto existente como modelo, evitando a duplicação de código.
+
+O padrão de projeto Prototype (Protótipo) é um padrão de criação que permite criar novos objetos duplicando um objeto 
+existente (protótipo) em vez de criar um objeto do zero. Ele é útil quando a criação de um objeto é cara em termos de 
+desempenho ou recursos e deseja-se evitar essa sobrecarga repetidamente.
+
+Vamos supor que estamos desenvolvendo um sistema de clonagem de células e queremos criar novas células duplicando uma 
+célula existente.
+
+1º - Vamos definir a classe "Celula" que representa uma célula. A classe Celula implementa a interface Cloneable, que é 
+     necessária para habilitar a clonagem. Ela possui um método clone() que faz a clonagem do objeto.

@@ -17,3 +17,10 @@ bicicletas.
 4º - Vamos criar as subclasses de "FabricaVeiculo" para cada tipo de veículo
 
 5º - Agora, podemos usar as fábricas para criar objetos Veiculo sem se preocupar com as classes concretas.
+
+O padrão Factory Method permite que as subclasses da classe "FabricaVeiculo" decidam qual classe concreta instanciar. 
+As subclasses, "FabricaCarro" e "FabricaBicicleta", implementam o método factoryMethod() para criar os objetos Veiculo 
+correspondentes.
+
+Isso torna o código mais flexível e extensível, pois podemos adicionar novas subclasses de "FabricaVeiculo" para criar 
+novos tipos de veículos sem modificar o código que os utiliza.
