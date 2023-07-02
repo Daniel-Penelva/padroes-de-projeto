@@ -12,3 +12,8 @@ No entanto, temos um cliente que espera uma interface comum chamada AudioPlayer 
 2º - vamos criar as classes MP3Player e WAVPlayer que implementam a interface Player.
 
 3º - vamos criar a interface AudioPlayer que representa a interface comum esperada pelo cliente.
+
+4º - Em seguida, vamos criar uma classe adaptadora chamada PlayerAdapter que implementa a interface 
+     AudioPlayer e utiliza um objeto Player para realizar a reprodução de áudio
+     
+     
