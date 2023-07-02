@@ -16,4 +16,11 @@ No entanto, temos um cliente que espera uma interface comum chamada AudioPlayer 
 4º - Em seguida, vamos criar uma classe adaptadora chamada PlayerAdapter que implementa a interface 
      AudioPlayer e utiliza um objeto Player para realizar a reprodução de áudio
      
+5º - Agora, podemos utilizar o adaptador PlayerAdapter para reproduzir diferentes tipos de arquivos de 
+     áudio através da interface AudioPlayer.
      
+ Utilizamos o adaptador PlayerAdapter para converter a interface Player dos objetos MP3Player e WAVPlayer na interface AudioPlayer esperada 
+ pelo cliente. Dessa forma, podemos utilizar o mesmo código do cliente para reproduzir diferentes tipos de áudio sem modificar sua lógica.
+ 
+ O padrão Adapter permite que objetos com interfaces incompatíveis trabalhem juntos através de um adaptador. Isso facilita a reutilização 
+ de código existente e a integração de componentes de terceiros em um sistema.
