@@ -11,3 +11,7 @@ ar-condicionado. O padrão Decorator nos permite adicionar esses recursos de for
 
 2º - vamos implementar a classe CarroBasico que implementa a interface Carro. A classe CarroBasico representa um carro básico sem nenhum 
      recurso adicional.
+     
+3º - vamos criar os decoradores que adicionam recursos ao carro básico. Primeiro, vamos criar o decorador TetoSolar. O decorador TetoSolar 
+     recebe uma instância da interface Carro no construtor e implementa o método montar(), onde primeiro chama o método montar() da 
+     instância de Carro e em seguida adiciona o teto solar.
