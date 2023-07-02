@@ -10,3 +10,5 @@ No entanto, temos um cliente que espera uma interface comum chamada AudioPlayer 
 1º - vamos definir a interface Player.
 
 2º - vamos criar as classes MP3Player e WAVPlayer que implementam a interface Player.
+
+3º - vamos criar a interface AudioPlayer que representa a interface comum esperada pelo cliente.
