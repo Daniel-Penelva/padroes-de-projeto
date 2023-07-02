@@ -8,7 +8,11 @@ são tratados de maneira uniforme.
 Vamos supor que estamos desenvolvendo uma aplicação que representa uma estrutura hierárquica de departamentos em uma empresa, onde um 
 departamento pode ter subdepartamentos e funcionários.
 
-1º - Vamos criar a interface Component que representa tanto os componentes individuais quanto os grupos de 
-     componentes.
+1º - Vamos criar a interface Component que representa tanto os componentes individuais quanto os grupos de componentes.
+     
+2º - Vamos implementar a classe Departamento que representa um departamento da empresa. A classe Departamento implementa a interface 
+Component e possui uma lista de componentes, que podem ser tanto departamentos quanto funcionários. Através dos métodos adicionarComponente() 
+e removerComponente(), é possível adicionar e remover componentes da lista. O método showDetails() percorre a lista de componentes e chama 
+o método showDetails() de cada componente.
      
 
