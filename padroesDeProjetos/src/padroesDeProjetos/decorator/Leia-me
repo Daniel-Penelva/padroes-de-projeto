@@ -8,3 +8,6 @@ Vamos considerar uma classe Carro que representa um carro básico e queremos adi
 ar-condicionado. O padrão Decorator nos permite adicionar esses recursos de forma dinâmica.
 
 1º - vamos criar a interface Carro.
+
+2º - vamos implementar a classe CarroBasico que implementa a interface Carro. A classe CarroBasico representa um carro básico sem nenhum 
+     recurso adicional.
