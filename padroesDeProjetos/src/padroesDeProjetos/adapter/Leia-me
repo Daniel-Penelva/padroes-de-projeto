@@ -1,0 +1,10 @@
+Adapter (Adaptador): converte a interface de uma classe em outra interface que os clientes esperam. Permite que classes trabalhem juntas 
+que, de outra forma, não poderiam devido a interfaces incompatíveis.
+
+O padrão de projeto Adapter (Adaptador) é um padrão estrutural que permite que objetos com interfaces incompatíveis trabalhem juntos. Ele 
+atua como um intermediário entre dois objetos, convertendo a interface de um objeto para a interface esperada pelo outro.
+
+Vamos supor que temos uma interface Player que representa um jogador de áudio e dois tipos de reprodutores de áudio: MP3Player e WAVPlayer. 
+No entanto, temos um cliente que espera uma interface comum chamada AudioPlayer para reproduzir qualquer tipo de áudio.
+
+1º - vamos definir a interface Player
