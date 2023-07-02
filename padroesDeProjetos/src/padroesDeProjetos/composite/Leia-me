@@ -18,4 +18,13 @@ o método showDetails() de cada componente.
 3º - Vamos implementar a classe Funcionario que representa um funcionário da empresa. A classe Funcionario também implementa a interface 
      Component e possui um método showDetails() que exibe as informações do funcionário.
      
+4º - Podemos utilizar o padrão Composite para construir a estrutura hierárquica de departamentos e funcionários.
+
+Criamos a estrutura hierárquica de departamentos e funcionários da empresa. O departamento de RH possui o funcionário João, o departamento 
+de TI possui o funcionário Maria, e ambos os departamentos são adicionados ao departamento principal da empresa. Em seguida, chamamos o 
+método showDetails() do departamento principal para exibir as informações de todos os componentes.
+
+O padrão Composite permite tratar objetos individuais e grupos de objetos de maneira uniforme, facilitando a construção de estruturas 
+hierárquicas. Ele é especialmente útil quando você precisa manipular uma estrutura complexa de objetos e tratá-la de forma recursiva.
+     
 

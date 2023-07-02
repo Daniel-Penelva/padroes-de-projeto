@@ -8,11 +8,9 @@ public class Departamento implements Component{
 	private String nome;
 	private List<Component> componentes;
 	
-	
-
 	public Departamento(String nome) {
 		this.nome = nome;
-		this.componentes = new ArrayList<Component>();
+		this.componentes = new ArrayList<>();
 	}
 	
 	public void adicionarComponente(Component componente) {
@@ -31,6 +29,5 @@ public class Departamento implements Component{
 		for (Component component : componentes) {
 			component.showDetails();
 		}
-		
 	}
 }

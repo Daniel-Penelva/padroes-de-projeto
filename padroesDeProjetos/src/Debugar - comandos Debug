@@ -1,0 +1,11 @@
+Comandos:
+
+F6 -> Segue linha a linha
+
+F5 -> Entra no método
+
+F7 -> Sai de dentro do método
+
+F8 -> Segue para o próximo ponto de parada - desabilitar
+
+CTRL + SHIFT + I -> mostra valor da expressão ou variável 
