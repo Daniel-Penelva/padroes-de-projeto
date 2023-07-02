@@ -18,3 +18,11 @@ ar-condicionado. O padrão Decorator nos permite adicionar esses recursos de for
      
 4º - vamos criar o decorador ArCondicionado. O decorador ArCondicionado também recebe uma instância de Carro no construtor e implementa o 
      método montar(), onde primeiro chama o método montar() da instância de Carro e em seguida adiciona o ar-condicionado.
+     
+5º - podemos utilizar os decoradores para adicionar recursos opcionais ao carro básico.
+
+Criamos um carro básico e utilizamos os decoradores TetoSolar e ArCondicionado para adicionar esses recursos ao carro. Também mostramos 
+como é possível combinar vários decoradores para adicionar múltiplos recursos ao mesmo tempo.
+
+O padrão Decorator permite adicionar funcionalidades adicionais a um objeto de forma dinâmica, sem modificar a estrutura básica do objeto 
+original. Isso proporciona uma maior flexibilidade e extensibilidade ao código.
