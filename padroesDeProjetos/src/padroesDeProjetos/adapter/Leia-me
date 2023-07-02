@@ -7,4 +7,6 @@ atua como um intermediário entre dois objetos, convertendo a interface de um ob
 Vamos supor que temos uma interface Player que representa um jogador de áudio e dois tipos de reprodutores de áudio: MP3Player e WAVPlayer. 
 No entanto, temos um cliente que espera uma interface comum chamada AudioPlayer para reproduzir qualquer tipo de áudio.
 
-1º - vamos definir a interface Player
+1º - vamos definir a interface Player.
+
+2º - vamos criar as classes MP3Player e WAVPlayer que implementam a interface Player.
