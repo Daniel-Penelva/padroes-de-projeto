@@ -14,5 +14,8 @@ departamento pode ter subdepartamentos e funcionários.
 Component e possui uma lista de componentes, que podem ser tanto departamentos quanto funcionários. Através dos métodos adicionarComponente() 
 e removerComponente(), é possível adicionar e remover componentes da lista. O método showDetails() percorre a lista de componentes e chama 
 o método showDetails() de cada componente.
+
+3º - Vamos implementar a classe Funcionario que representa um funcionário da empresa. A classe Funcionario também implementa a interface 
+     Component e possui um método showDetails() que exibe as informações do funcionário.
      
 
