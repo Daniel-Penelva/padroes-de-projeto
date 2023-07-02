@@ -1,0 +1,14 @@
+Composite (Composto): compõe objetos em estruturas de árvore para representar hierarquias parte-todo. Permite que clientes tratem objetos 
+individuais e composições de objetos de maneira uniforme.
+
+O padrão de projeto Composite (Composto) é um padrão estrutural que permite tratar objetos individuais e composições de objetos de maneira 
+uniforme. Ele permite que você construa uma estrutura hierárquica de objetos em forma de árvore, onde os nós individuais e os grupos de nós 
+são tratados de maneira uniforme.
+
+Vamos supor que estamos desenvolvendo uma aplicação que representa uma estrutura hierárquica de departamentos em uma empresa, onde um 
+departamento pode ter subdepartamentos e funcionários.
+
+1º - Vamos criar a interface Component que representa tanto os componentes individuais quanto os grupos de 
+     componentes.
+     
+
