@@ -1,0 +1,12 @@
+Facade (Fachada): fornece uma interface unificada para um conjunto de interfaces em um subsistema. Simplifica o uso do subsistema pelos 
+clientes.
+
+O padrão de projeto Facade (Fachada) é um padrão estrutural que fornece uma interface unificada simplificada para um conjunto de interfaces 
+mais complexas em um subsistema. Ele atua como um ponto de entrada único para simplificar o uso do subsistema e ocultar sua complexidade.
+
+Vamos considerar um sistema de reprodução de música composto por várias classes complexas, como ReprodutorDeAudio, ReprodutorDeVideo, 
+CodificadorDeAudio, CodificadorDeVideo, etc. O padrão Facade nos permitirá criar uma fachada que fornece uma interface simples para 
+reproduzir um arquivo de música. Vamos criar as classes do subsistema de reprodução de música. 
+
+1º - vamos criar a classe ReprodutorDeAudio e ReprodutorDeVideo. A classe ReprodutorDeAudio e ReprodutorDeVideo possui um método 
+reproduzir() que recebe o arquivo de áudio e o reproduz.
