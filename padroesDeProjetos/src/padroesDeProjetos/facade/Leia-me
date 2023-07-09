@@ -10,3 +10,6 @@ reproduzir um arquivo de música. Vamos criar as classes do subsistema de reprod
 
 1º - vamos criar a classe ReprodutorDeAudio e ReprodutorDeVideo. A classe ReprodutorDeAudio e ReprodutorDeVideo possui um método 
 reproduzir() que recebe o arquivo de áudio e o reproduz.
+
+2º - vamos criar as classes CodificadorDeAudio e CodificadorDeVideo.Essas classes simulam a funcionalidade de codificar áudio e vídeo, mas 
+não são utilizadas na fachada.
