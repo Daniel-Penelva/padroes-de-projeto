@@ -13,3 +13,7 @@ reproduzir() que recebe o arquivo de áudio e o reproduz.
 
 2º - vamos criar as classes CodificadorDeAudio e CodificadorDeVideo.Essas classes simulam a funcionalidade de codificar áudio e vídeo, mas 
 não são utilizadas na fachada.
+
+3º - vamos criar a classe FachadaReprodutorDeMusica que atuará como a fachada para o subsistema de reprodução de música. A classe 
+FachadaReprodutorDeMusica possui instâncias das classes ReprodutorDeAudio, ReprodutorDeVideo, CodificadorDeAudio e CodificadorDeVideo. 
+O método reproduzirMusica() recebe o arquivo de música e verifica o tipo do arquivo para decidir qual reprodutor utilizar.
