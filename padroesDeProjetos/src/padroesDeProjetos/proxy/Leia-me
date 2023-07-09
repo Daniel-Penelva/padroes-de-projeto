@@ -13,3 +13,5 @@ leva tempo para ser carregada. Queremos usar um Proxy para exibir uma mensagem d
 ser carregada. O método carregarImagem() simula o processo de carregamento da imagem pesada. O método exibir() exibe a imagem carregada.
 
 
+3º - vamos implementar o Proxy ProxyImagem. A classe ProxyImagem atua como o Proxy para a ImagemReal. Quando o método exibir() é chamado 
+no Proxy, ele verifica se a imagem real já foi carregada. Se não, cria uma instância de ImagemReal e chama o método exibir() nele.
