@@ -1,0 +1,10 @@
+Proxy (Proxy): fornece um substituto ou marcador de posição para controlar o acesso a um objeto subjacente.
+
+O padrão de projeto Proxy é um padrão estrutural que fornece um substituto ou representante de outro objeto para controlar o acesso a ele. 
+
+O Proxy atua como uma camada intermediária entre o cliente e o objeto real, permitindo adicionar funcionalidades adicionais ou controlar o 
+acesso ao objeto real.
+Vamos considerar um cenário em que temos uma interface Imagem e uma implementação concreta ImagemReal que representa uma imagem pesada que 
+leva tempo para ser carregada. Queremos usar um Proxy para exibir uma mensagem de carregamento enquanto a imagem real está sendo carregada.
+
+1º - vamos definir a interface Imagem.
