@@ -11,6 +11,7 @@ public class ProxyImagem implements Imagem {
 
 	@Override
 	public void exibir() {
+		// Verifica se a imagem existe
 		if(imagemReal == null) {
 			imagemReal = new ImagemReal(arquivo);
 		}

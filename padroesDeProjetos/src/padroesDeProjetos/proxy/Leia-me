@@ -15,3 +15,10 @@ ser carregada. O método carregarImagem() simula o processo de carregamento da i
 
 3º - vamos implementar o Proxy ProxyImagem. A classe ProxyImagem atua como o Proxy para a ImagemReal. Quando o método exibir() é chamado 
 no Proxy, ele verifica se a imagem real já foi carregada. Se não, cria uma instância de ImagemReal e chama o método exibir() nele.
+
+4º - Agora, podemos utilizar o Proxy para exibir uma imagem. Criamos uma instância do Proxy ProxyImagem passando o nome do arquivo da imagem. 
+Ao chamar o método exibir(), o Proxy verifica se a imagem real já foi carregada. Se não, carrega a imagem e a exibe.
+
+O padrão Proxy permite controlar o acesso a um objeto real adicionando funcionalidades adicionais, como carregamento preguiçoso, cache, 
+validação de acesso, entre outros. Ele também pode ser usado para fornecer um ponto de entrada adicional para o objeto real, permitindo a 
+implementação de lógicas específicas antes ou depois de chamar os métodos do objeto real.
