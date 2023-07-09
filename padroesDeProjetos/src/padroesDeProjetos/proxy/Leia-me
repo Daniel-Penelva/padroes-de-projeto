@@ -8,3 +8,8 @@ Vamos considerar um cenário em que temos uma interface Imagem e uma implementa�
 leva tempo para ser carregada. Queremos usar um Proxy para exibir uma mensagem de carregamento enquanto a imagem real está sendo carregada.
 
 1º - vamos definir a interface Imagem.
+
+2º - vamos implementar a classe ImagemReal que representa a imagem real. A classe ImagemReal representa a imagem real que leva tempo para 
+ser carregada. O método carregarImagem() simula o processo de carregamento da imagem pesada. O método exibir() exibe a imagem carregada.
+
+
