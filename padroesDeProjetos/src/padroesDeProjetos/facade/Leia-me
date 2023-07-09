@@ -17,3 +17,10 @@ não são utilizadas na fachada.
 3º - vamos criar a classe FachadaReprodutorDeMusica que atuará como a fachada para o subsistema de reprodução de música. A classe 
 FachadaReprodutorDeMusica possui instâncias das classes ReprodutorDeAudio, ReprodutorDeVideo, CodificadorDeAudio e CodificadorDeVideo. 
 O método reproduzirMusica() recebe o arquivo de música e verifica o tipo do arquivo para decidir qual reprodutor utilizar.
+
+4º - Agora, podemos utilizar a fachada FachadaReprodutorDeMusica para reproduzir um arquivo de música, para isso vamos criar a classe Cliente.
+Vai ser criado uma instância da fachada FachadaReprodutorDeMusica e será utilizado o método reproduzirMusica() para reproduzir um arquivo 
+de música. Dependendo do tipo do arquivo, a fachada decidirá qual reprodutor utilizar.
+
+O padrão Facade simplifica o uso de um subsistema complexo fornecendo uma interface unificada e simplificada. Ele ajuda a ocultar a 
+complexidade do subsistema e promove o princípio de "menos é mais", fornecendo apenas as funcionalidades necessárias para os clientes.

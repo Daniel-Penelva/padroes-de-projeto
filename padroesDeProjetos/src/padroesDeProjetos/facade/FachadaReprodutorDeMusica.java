@@ -15,6 +15,7 @@ public class FachadaReprodutorDeMusica {
 	}
 
 	public void reproduzirMusica(String arquivo) {
+	// Vai capturar apenas a extensão do arquivo - por exemplo, musica.mp3 - vai add na variavel apenas o mp3
 		String tipo = arquivo.substring(arquivo.lastIndexOf(".") + 1);
 
 		if (tipo.equalsIgnoreCase("mp3") || tipo.equalsIgnoreCase("wav")) {
