@@ -1,0 +1,12 @@
+
+Bridge (Ponte): desacopla uma abstração de sua implementação, permitindo que elas variem independentemente.
+
+O padrão Bridge é um padrão de projeto estrutural que separa uma abstração da sua implementação, permitindo que ambas possam variar 
+independentemente. Ele é útil quando há diferentes dimensões de variação em uma classe, e a herança tradicional resultaria em uma explosão 
+de subclasses.
+
+Suponha que estamos desenvolvendo um sistema de gerenciamento de formas geométricas, e queremos lidar com diferentes tipos de formas, como 
+círculos e retângulos, bem como diferentes tipos de renderizadores, como renderização em SVG e renderização em tela.
+
+1º - A interface Renderizador define os métodos renderizarCirculo() e renderizarRetangulo() que serão implementados pelas classes 
+     concretas de renderizadores.
