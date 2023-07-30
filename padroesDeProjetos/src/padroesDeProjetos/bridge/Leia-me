@@ -20,3 +20,12 @@ círculos e retângulos, bem como diferentes tipos de renderizadores, como rende
 
 4º - vamos criar as subclasses Circulo e Retangulo que herdam de Forma. As subclasses Circulo e Retangulo implementam o método desenhar() 
      de acordo com a lógica específica de cada forma.
+     
+ 5º - Agora, vamos utilizar o padrão Bridge.
+ 
+ Neste exemplo, criamos instâncias dos objetos RenderizadorSVG e RenderizadorTela. Em seguida, criamos instâncias das formas Circulo e 
+ Retangulo, passando o renderizador correspondente para cada forma. Por fim, chamamos o método desenhar() em cada forma.
+ 
+ O padrão Bridge permite separar a abstração das implementações específicas, permitindo que ambas possam variar independentemente. Isso 
+ evita a criação de uma hierarquia de classes explosiva e promove a reutilização de código.
+ 
