@@ -14,3 +14,6 @@ círculos e retângulos, bem como diferentes tipos de renderizadores, como rende
 2º - Agora, vamos criar as classes concretas de renderizadores, RenderizadorSVG e RenderizadorTela, que implementam a interface Renderizador.
      As classes RenderizadorSVG e RenderizadorTela implementam os métodos da interface Renderizador de acordo com a lógica específica de 
      cada tipo de renderizador.
+     
+ 3º - Temos uma classe abstrata Forma que possui um campo para o renderizador. A classe Forma possui um construtor que recebe um objeto 
+Renderizador. Ela também declara um método abstrato desenhar(), que será implementado pelas subclasses.
