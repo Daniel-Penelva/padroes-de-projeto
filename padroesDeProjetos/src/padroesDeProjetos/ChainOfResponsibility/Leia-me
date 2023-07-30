@@ -12,4 +12,9 @@ correspondente aprova; caso contrário, a solicitação é passada para o próxi
 1º - Vamos definir a interface Aprovador que representa cada nível de aprovação. A interface Aprovador define dois métodos: 
      setProximoAprovador() para definir o próximo aprovador na corrente e aprovar() para processar a aprovação da despesa.
      
-2º - vamos criar a classe Despesa que representa uma despesa a ser aprovada
+2º - Vamos criar a classe Despesa que representa uma despesa a ser aprovada.
+
+3º - Agora, vamos implementar as classes concretas que representam cada nível de aprovação. Vamos começar com a classe FuncionarioAprovador.
+     A classe FuncionarioAprovador implementa a interface Aprovador. Ela possui um limite máximo de aprovação e mantém uma referência para 
+     o próximo aprovador na corrente. No método aprovar(), o aprovador verifica se a despesa está abaixo do limite. Se estiver, ele aprova; 
+     caso contrário, passa a solicitação para o próximo aprovador na corrente.
