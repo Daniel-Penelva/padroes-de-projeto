@@ -10,3 +10,7 @@ círculos e retângulos, bem como diferentes tipos de renderizadores, como rende
 
 1º - A interface Renderizador define os métodos renderizarCirculo() e renderizarRetangulo() que serão implementados pelas classes 
      concretas de renderizadores.
+     
+2º - Agora, vamos criar as classes concretas de renderizadores, RenderizadorSVG e RenderizadorTela, que implementam a interface Renderizador.
+     As classes RenderizadorSVG e RenderizadorTela implementam os métodos da interface Renderizador de acordo com a lógica específica de 
+     cada tipo de renderizador.
