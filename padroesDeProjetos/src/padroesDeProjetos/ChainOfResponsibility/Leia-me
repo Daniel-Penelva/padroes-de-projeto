@@ -1,0 +1,15 @@
+Chain of Responsibility (Corrente de Responsabilidade): permite que um conjunto de objetos possa tratar uma solicitação de forma 
+sequencial, passando-a ao longo da corrente até que seja processada.
+
+O padrão de projeto Chain of Responsibility (Corrente de Responsabilidade) é um padrão comportamental que permite que múltiplos objetos 
+possam tratar uma solicitação de forma sequencial. Cada objeto na corrente tem a opção de lidar com a solicitação ou passá-la para o 
+próximo objeto na corrente.
+
+Vamos considerar um cenário em que temos um sistema de aprovação de despesas, composto por vários níveis de aprovação (por exemplo, 
+funcionário, gerente, diretor). Cada nível de aprovação tem um limite máximo de aprovação. Se a despesa estiver abaixo do limite, o nível 
+correspondente aprova; caso contrário, a solicitação é passada para o próximo nível de aprovação.
+
+1º - Vamos definir a interface Aprovador que representa cada nível de aprovação. A interface Aprovador define dois métodos: 
+     setProximoAprovador() para definir o próximo aprovador na corrente e aprovar() para processar a aprovação da despesa.
+     
+2º - vamos criar a classe Despesa que representa uma despesa a ser aprovada
