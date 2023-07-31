@@ -20,3 +20,15 @@ correspondente aprova; caso contrário, a solicitação é passada para o próxi
      caso contrário, passa a solicitação para o próximo aprovador na corrente.
 
  4º - Agora, vamos implementar as classes GerenteAprovador e DiretorAprovador da mesma forma.
+ 
+ 5º - Por fim, vamos utilizar os aprovadores para processar uma despesa.
+ 
+Neste exemplo, criamos instâncias dos aprovadores FuncionarioAprovador, GerenteAprovador e DiretorAprovador com seus respectivos limites 
+de aprovação. Em seguida, definimos a corrente chamando o método setProximoAprovador() para conectar os aprovadores na ordem correta.
+
+Depois, criamos três despesas com diferentes valores e chamamos o método aprovar() no primeiro aprovador da corrente. A corrente irá 
+percorrer cada aprovador, passando a despesa para o próximo aprovador até que seja aprovada ou até que não haja mais aprovadores na 
+corrente.
+
+O padrão Chain of Responsibility permite criar uma corrente de objetos que podem tratar solicitações de forma sequencial, evitando a 
+necessidade de acoplar explicitamente o remetente da solicitação ao receptor. Isso proporciona flexibilidade e extensibilidade ao sistema.
