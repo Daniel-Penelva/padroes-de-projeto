@@ -1,0 +1,21 @@
+Iterator (Iterador) fornece uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação interna.
+
+O padrão Iterator é um padrão de projeto comportamental que fornece uma maneira de acessar os elementos de um objeto agregado 
+sequencialmente sem expor sua representação interna. Ele define uma interface que permite percorrer os elementos de uma coleção de forma 
+uniforme, independentemente da implementação específica da coleção.
+
+Para exemplificar considere uma classe Agenda que armazena uma lista de contatos. Queremos percorrer os contatos da agenda sem conhecer os 
+detalhes internos da implementação da lista de contatos.
+
+1º - Começar definindo a classe Contato. 
+  . Esta classe representa um contato na agenda.
+  . Possui atributos para armazenar o nome e o número de telefone do contato.
+  . Fornece métodos para acessar esses atributos (getName() e getPhoneNumber()).
+
+2º - Criar uma interface Iterator.
+  . Interface que define o comportamento de um iterador genérico.
+  . Contém métodos hasNext() para verificar se há mais elementos e next() para obter o próximo elemento da coleção.
+  
+3º - Criar uma interface Aggregate.
+  . Interface que define o comportamento de uma coleção genérica.
+  . Fornece um método createIterator() para criar um iterador para percorrer a coleção.
