@@ -34,3 +34,15 @@ detalhes internos da implementação da lista de contatos.
   . Armazena uma lista de contatos usando a classe ArrayList.
   . Fornece um método addContact() para adicionar contatos à agenda.
   . Implementa o método createIterator() para criar um iterador específico da agenda.
+  
+  
+6º - Criando a Classe main IteratorPatternExample:
+  . Classe principal que contém o método main() para demonstrar o uso do padrão Iterator.
+  . Cria uma instância da Agenda.
+  . Adiciona alguns contatos à agenda.
+  . Cria um iterador para percorrer os contatos na agenda.
+  . Percorre e imprime os contatos da agenda usando o iterador.
+ 
+
+O padrão Iterator permite percorrer os elementos de uma coleção de forma uniforme, independentemente da implementação específica da coleção. 
+Ele desacopla o código que itera sobre a coleção do código que implementa a coleção, permitindo que ambos evoluam independentemente.

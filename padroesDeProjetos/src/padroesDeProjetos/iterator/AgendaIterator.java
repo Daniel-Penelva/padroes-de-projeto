@@ -15,9 +15,10 @@ public class AgendaIterator implements Iterator<Contato> {
 
 	@Override
 	public boolean hasNext() {
-		return indice < contatos.size();
+		return indice < contatos.size(); // contatos.size() é o valor total de contatos criados 
 	}
 
+	// Para cada contato imprimido é incrementado mais um no indice 
 	@Override
 	public Contato next() {
 		if (hasNext()) {
