@@ -4,6 +4,10 @@ O padrão Iterator é um padrão de projeto comportamental que fornece uma manei
 sequencialmente sem expor sua representação interna. Ele define uma interface que permite percorrer os elementos de uma coleção de forma 
 uniforme, independentemente da implementação específica da coleção.
 
+Portanto, o padrão de projeto Iterator é um dos padrões de projeto comportamentais mais utilizados. Ele é projetado para fornecer uma 
+maneira eficiente de acessar sequencialmente os elementos de uma coleção de objetos sem expor sua representação subjacente. O padrão 
+Iterator é útil quando você tem uma coleção de objetos e deseja percorrer esses objetos sem expor os detalhes da implementação da coleção.
+
 Para exemplificar considere uma classe Agenda que armazena uma lista de contatos. Queremos percorrer os contatos da agenda sem conhecer os 
 detalhes internos da implementação da lista de contatos.
 
@@ -19,3 +23,14 @@ detalhes internos da implementação da lista de contatos.
 3º - Criar uma interface Aggregate.
   . Interface que define o comportamento de uma coleção genérica.
   . Fornece um método createIterator() para criar um iterador para percorrer a coleção.
+  
+4º - Criar uma classe AgendaIterator
+  . Implementação concreta do iterador para a classe Agenda.
+  . Mantém uma referência à lista de contatos da agenda e um índice para rastrear a posição atual durante a iteração.
+  . Implementa os métodos hasNext() e next() para percorrer os contatos na lista.
+  
+5º - Criando uma classe Agenda:
+  . Implementação concreta da coleção de contatos.
+  . Armazena uma lista de contatos usando a classe ArrayList.
+  . Fornece um método addContact() para adicionar contatos à agenda.
+  . Implementa o método createIterator() para criar um iterador específico da agenda.
