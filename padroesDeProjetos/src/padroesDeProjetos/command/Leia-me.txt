@@ -12,3 +12,15 @@ seja parametrizado com diferentes comandos.
      executar() para executar o comando e desfazer() para desfazer o comando.
      
 2º - Criando a classe TV que representa a TV a ser controlada.
+
+3º - A classe LigarTV implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
+     ligar() da TV. No método desfazer(), o comando chama o método desligar() da TV.
+     
+ 4º - A classe DesligarTV implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
+     desligar() da TV. No método desfazer(), o comando chama o método ligar() da TV.
+
+5º - A classe AumentarVolume implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
+     aumentarVolume() da TV. No método desfazer(), o comando chama o método diminuirVolume() da TV.
+     
+6º - A classe DiminuirVolume implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
+     diminuirVolume() da TV. No método desfazer(), o comando chama o método aumentarVolume() da TV.
