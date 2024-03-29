@@ -1,0 +1,14 @@
+Command (Comando): encapsula uma solicitação como um objeto, permitindo que parametrize clientes com diferentes solicitações, fila ou 
+registre solicitações e implemente operações reversíveis.
+
+O padrão de projeto Command (Comando) é um padrão comportamental que encapsula uma solicitação como um objeto, permitindo que parametrize 
+clientes com diferentes solicitações, enfileire ou registre solicitações e implemente operações reversíveis.
+
+Para exemplificar, vamos considerar um cenário em que temos um controle remoto que pode executar diferentes ações, como ligar a TV, 
+desligar a TV, aumentar o volume e diminuir o volume. Cada ação será encapsulada em um objeto de comando, permitindo que o controle remoto 
+seja parametrizado com diferentes comandos.
+
+1º - Definir a interface Comando que representa um comando genérico. A interface Comando define dois métodos: 
+     executar() para executar o comando e desfazer() para desfazer o comando.
+     
+2º - Criando a classe TV que representa a TV a ser controlada.
