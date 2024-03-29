@@ -16,7 +16,7 @@ seja parametrizado com diferentes comandos.
 3º - A classe LigarTV implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
      ligar() da TV. No método desfazer(), o comando chama o método desligar() da TV.
      
- 4º - A classe DesligarTV implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
+4º - A classe DesligarTV implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
      desligar() da TV. No método desfazer(), o comando chama o método ligar() da TV.
 
 5º - A classe AumentarVolume implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
@@ -24,3 +24,41 @@ seja parametrizado com diferentes comandos.
      
 6º - A classe DiminuirVolume implementa a interface Comando e possui uma referência para a TV. No método executar(), o comando chama o método 
      diminuirVolume() da TV. No método desfazer(), o comando chama o método aumentarVolume() da TV.
+     
+7º - A implementação da classe ControleRemoto usa uma lista para armazenar os comandos e um inteiro para armazenar o índice do último 
+     comando executado. O método setComando adiciona um novo comando à lista e atualiza o índice do último comando executado. O método 
+     executaComando executa o comando especificado pelo índice. O método desfazerUltimoComando desfaz o último comando executado.
+     
+7º (exemplo extra) - A implementação da classe ControleRemoto2 têm.
+
+	Histórico de Comandos:
+   		- Foi adicionada uma nova lista chamada historico, que será usada para armazenar os comandos executados. Esta lista será 
+   		  inicializada no construtor da classe.
+
+	Método setComando():
+   		- Este método permanece inalterado. Ele é usado para associar um comando a um determinado botão do controle remoto.
+
+	Método executaComando():
+   		- Após executar um comando, ele é adicionado à lista historico. Isso permite rastrear quais comandos foram executados em ordem.
+
+	Método desfazerUltimoComando():
+   		- Verifica se o histórico não está vazio. Se houver comandos no histórico, ele remove o último comando executado usando 
+   		  historico.remove(historico.size() - 1).
+   		- Em seguida, chama o método desfazer() no último comando removido, revertendo a ação executada anteriormente.
+   		- Se o histórico estiver vazio, significa que não há comandos para desfazer, então uma mensagem apropriada é exibida.
+
+Essa implementação permite que o controle remoto desfaça o último comando executado, útil em situações em que um usuário deseja corrigir 
+uma ação anterior. Por exemplo, se o usuário acidentalmente aumentou o volume, ele pode pressionar o botão "desfazer" para diminuir o 
+volume de volta ao estado anterior.
+
+
+Neste exemplo foi criado instâncias dos comandos LigarTV, DesligarTV, AumentarVolume e DiminuirVolume, cada um recebendo a TV como 
+parâmetro. Em seguida foi criado uma instância do controle remoto ControleRemoto e configurado os comandos nas posições desejadas.
+Em seguida foi chamado o método executarComando() no controle remoto para executar os comandos com base em um índice. Também foi chamado o 
+método desfazerUltimoComando() para desfazer o último comando executado.
+
+O padrão Command permite encapsular solicitações como objetos, permitindo que você as trate de forma parametrizada, enfileire ou registre 
+solicitações e implemente operações reversíveis. Isso ajuda a desacoplar o remetente do receptor da solicitação e permite a flexibilidade 
+de configurar diferentes comandos.
+
+
