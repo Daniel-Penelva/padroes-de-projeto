@@ -17,3 +17,40 @@ Para isso, precisamos salvar o estado do documento em diferentes momentos e ser 
      conteudo, que representa o conteúdo atual do documento. Ela possui métodos para escrever texto no documento e obter/definir o conteúdo. 
      Além disso, possui os métodos salvar() e restaurar(). O método salvar() retorna um objeto Memento contendo o estado atual do documento, 
      e o método restaurar() recebe um objeto Memento e restaura o estado do documento com base nesse objeto.
+     
+3º - Criar uma classe Historico, que será responsável por gerenciar os objetos Memento e manter um histórico de estados do documento. A 
+     classe Historico possui um campo historico do tipo Stack<Memento> para armazenar os objetos Memento. Ela possui o método 
+     salvarEstado(), que recebe um objeto Documento, cria um Memento com o estado atual do documento e o adiciona ao histórico. O método 
+     desfazer() remove o último Memento do histórico e restaura o estado do documento com base nesse Memento.
+     
+OBS. O que é o tipo Stack?
+Um tipo Stack (ou pilha, em português) é uma estrutura de dados que segue o princípio de LIFO (Last In, First Out), ou seja, o último 
+elemento inserido em uma pilha é o primeiro a ser removido. É como uma pilha de pratos, onde você adiciona pratos no topo e retira pratos 
+do topo.
+
+Um "Stack" é uma coleção ordenada de itens onde as operações principais são adicionar um item à pilha (push) e remover um item da 
+pilha (pop). Além disso, geralmente existe uma operação para verificar o elemento no topo da pilha (peek), que retorna o elemento sem 
+removê-lo.
+
+As operações básicas de uma pilha são:
+
+	1. push(item): Adiciona um item ao topo da pilha.
+	2. pop(): Remove e retorna o item que está no topo da pilha.
+	3. peek(): Retorna o item que está no topo da pilha sem removê-lo.
+	4. isEmpty(): Verifica se a pilha está vazia.
+	5. size(): Retorna o número de elementos na pilha.
+
+Pilhas são amplamente utilizadas em algoritmos e estruturas de dados. Elas são eficientes para resolver problemas que envolvem operações em 
+que o último elemento a ser inserido é o primeiro a ser processado, como a execução de expressões aritméticas, o rastreamento de chamadas 
+de função em sistemas operacionais, a implementação de undo/redo em editores de texto, entre outros.
+
+Neste exemplo, foi criado uma instância de Documento e Historico. Em seguida, foi escrito duas partes de texto no documento e foi salvo o 
+estado em cada etapa. Depois, exibimos o conteúdo atual do documento e desfazemos a última alteração utilizando o método desfazer(). Por 
+fim, foi exibido o conteúdo do documento após desfazer.
+
+O padrão Memento permite salvar e restaurar o estado de um objeto sem violar o encapsulamento. Ele é útil quando se precisa implementar 
+funcionalidades de desfazer/repetir ou histórico em um sistema.
+
+
+
+
