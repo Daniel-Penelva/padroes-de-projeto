@@ -1,0 +1,19 @@
+Memento
+
+Memento captura e armazena o estado interno de um objeto sem violar o encapsulamento, de forma que o objeto possa ser restaurado para esse 
+estado posteriormente.
+
+O padrão Memento é um padrão de projeto comportamental que permite capturar e armazenar o estado interno de um objeto sem violar o 
+encapsulamento. Ele permite que você salve e restaure o estado de um objeto, de modo que o objeto possa retornar ao seu estado anterior.
+
+Para exemplificar suponha que estamos desenvolvendo um editor de texto e queremos implementar a funcionalidade de desfazer/repetir (undo/redo). 
+Para isso, precisamos salvar o estado do documento em diferentes momentos e ser capazes de restaurar esse estado posteriormente.
+
+1º - Criar a classe Memento que possui um campo estadoSalvo, que representa o estado do documento em um determinado momento. Ela possui um método getEstadoSalvo() 
+     para obter o estado salvo.
+
+
+2º - Definir a classe Documento, que representa o objeto cujo estado queremos salvar e restaurar. A classe Documento possui um campo 
+     conteudo, que representa o conteúdo atual do documento. Ela possui métodos para escrever texto no documento e obter/definir o conteúdo. 
+     Além disso, possui os métodos salvar() e restaurar(). O método salvar() retorna um objeto Memento contendo o estado atual do documento, 
+     e o método restaurar() recebe um objeto Memento e restaura o estado do documento com base nesse objeto.
