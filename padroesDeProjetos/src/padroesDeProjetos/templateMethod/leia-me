@@ -1,0 +1,21 @@
+Template Method (Método de Modelo)
+
+Template Method (Método de Modelo) define o esqueleto de um algoritmo em uma operação, delegando a implementação de certas etapas para 
+subclasses.
+
+O padrão Template Method é um padrão de projeto comportamental que define a estrutura básica de um algoritmo em uma classe base, permitindo 
+que as subclasses implementem partes específicas do algoritmo.
+
+Para exemplificar suponha que temos um aplicativo de geração de relatórios que precisa gerar diferentes tipos de relatórios, como relatório 
+de vendas e relatório de estoque. Ambos os relatórios têm uma estrutura básica semelhante, mas possuem algumas etapas específicas diferentes.
+
+1º - Definir uma classe abstrata Relatorio que representa o template para a geração de relatórios. A classe Relatorio define o método 
+     gerarRelatorio() como um método template final. Esse método chama outros métodos abstratos gerarCabecalho(), gerarCorpo() e 
+     gerarRodape(), que devem ser implementados pelas subclasses para fornecer as implementações específicas.
+     
+2º - Criar uma subclasse RelatorioVendas que herda a classe Relatorio e implementa os métodos abstratos. A classe RelatorioVendas 
+     implementa os métodos abstratos gerarCabecalho(), gerarCorpo() e gerarRodape() de acordo com a lógica específica do relatório de vendas.
+
+3º - Criar uma subclasse RelatorioEstoque que herda a classe Relatorio e implementa os métodos abstratos. A classe RelatorioEstoque 
+     implementa os métodos abstratos gerarCabecalho(), gerarCorpo() e gerarRodape() de acordo com a lógica específica do relatório de 
+     estoque.
