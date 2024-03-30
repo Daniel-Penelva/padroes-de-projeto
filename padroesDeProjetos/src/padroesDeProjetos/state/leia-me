@@ -22,3 +22,26 @@ EstadoSemMoeda, EstadoComMoeda, EstadoVendido (Implementações concretas de Est
 	 interface EstadoMaquina, de acordo com o comportamento esperado para o estado correspondente.
 	 Por exemplo, EstadoSemMoeda define o comportamento quando nenhuma moeda foi inserida, EstadoComMoeda define o comportamento quando uma 
 	 moeda foi inserida e EstadoVendido define o comportamento quando a bebida está sendo dispensada.
+
+OBS. Métodos de cada classe:
+
+ . inserirMoeda(): Este método é responsável por lidar com a inserção de uma moeda na máquina de venda automática. Ele delega essa ação 
+   para o estado atual da máquina.
+
+ . selecionarBebida(): Este método é responsável por lidar com a seleção de uma bebida na máquina de venda automática. Novamente, ele 
+   delega essa ação para o estado atual da máquina.
+
+ . dispensar(): Este método é responsável por dispensar a bebida selecionada na máquina de venda automática. Ele também delega essa ação 
+   para o estado atual da máquina.
+   
+ . getEstadoSemMoeda(), getEstadoComMoeda(), getEstadoVendido(): Esses métodos são utilizados para obter referências aos diferentes estados 
+   da máquina de venda automática.
+   
+ . setEstado(EstadoMaquina estado): Este método é usado para definir o estado atual da máquina de venda automática.
+ 
+ 
+Neste exemplo, temos uma máquina de venda automática com três estados diferentes (EstadoSemMoeda, EstadoComMoeda, EstadoVendido) e a 
+classe MaquinaDeVenda que gerencia a transição entre esses estados. Cada estado implementa a interface EstadoMaquina, que define métodos 
+para inserir moeda, selecionar uma bebida e dispensar a bebida. Quando um método é chamado na MaquinaDeVenda, ele é delegado para o estado 
+atual. Isso permite que a máquina de venda automática mude de comportamento dependendo de seu estado atual, seguindo assim o padrão de 
+projeto State.
