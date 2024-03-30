@@ -15,3 +15,13 @@ transferência bancária. Cada método de pagamento possui sua própria lógica 
 2º - Criar as classes que implementam a interface Pagamento para cada método de pagamento, são elas: PagamentoCartaoCredito, PagamentoPayPal
      e PagamentoTransferenciaBancario. Cada classe de pagamento implementa o método processarPagamento() de acordo com a lógica específica 
      do método de pagamento.
+
+3º - Criar uma classe CarrinhoCompras que utiliza uma estratégia de pagamento. A classe CarrinhoCompras possui um método processarPagamento() 
+     que delega o processamento do pagamento para a estratégia de pagamento definida.
+     
+Neste exemplo, foi criado uma instância da classe CarrinhoCompras e três instâncias diferentes de estratégias de pagamento: 
+PagamentoCartaoCredito, PagamentoPayPal e PagamentoTransferenciaBancaria. Em seguida, foi definido a estratégia de pagamento no carrinho de 
+compras e depois foi chamado o método processarPagamento() para realizar o pagamento.
+
+O padrão Strategy permite que diferentes algoritmos sejam encapsulados em classes separadas, tornando-os intercambiáveis e independentes 
+dos clientes que os utilizam. Isso promove o princípio do "aberto para extensão, fechado para modificação".
