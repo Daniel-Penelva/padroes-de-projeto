@@ -1,0 +1,17 @@
+Strategy (Estratégia)
+
+Strategy define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis. Permite que o algoritmo varie 
+independentemente dos clientes que o utilizam.
+
+O padrão Strategy é um padrão de projeto comportamental que permite definir uma família de algoritmos, encapsulá-los em classes separadas e 
+torná-los intercambiáveis. Isso permite que os algoritmos variem independentemente dos clientes que os utilizam.
+
+Para exemplificar suponha que temos um sistema de pagamento que oferece diferentes métodos de pagamento, como cartão de crédito, PayPal e 
+transferência bancária. Cada método de pagamento possui sua própria lógica de processamento.
+
+1º - Definir a interface Pagamento que representa a estratégia de pagamento. A interface Pagamento define o método processarPagamento() que 
+     recebe o valor do pagamento como parâmetro.
+     
+2º - Criar as classes que implementam a interface Pagamento para cada método de pagamento, são elas: PagamentoCartaoCredito, PagamentoPayPal
+     e PagamentoTransferenciaBancario. Cada classe de pagamento implementa o método processarPagamento() de acordo com a lógica específica 
+     do método de pagamento.
