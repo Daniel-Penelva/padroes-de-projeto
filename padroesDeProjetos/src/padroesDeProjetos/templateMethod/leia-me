@@ -19,3 +19,10 @@ de vendas e relatório de estoque. Ambos os relatórios têm uma estrutura bási
 3º - Criar uma subclasse RelatorioEstoque que herda a classe Relatorio e implementa os métodos abstratos. A classe RelatorioEstoque 
      implementa os métodos abstratos gerarCabecalho(), gerarCorpo() e gerarRodape() de acordo com a lógica específica do relatório de 
      estoque.
+     
+4º - Agora vou criar a classe Cliente para as instâncias das subclasses RelatorioVendas e RelatorioEstoque e chamamos o método 
+     gerarRelatorio() em cada uma delas.
+     
+O padrão Template Method permite definir a estrutura básica de um algoritmo em uma classe base, enquanto permite que as subclasses 
+implementem partes específicas desse algoritmo. Isso promove a reutilização de código e evita a duplicação de código semelhante em várias 
+classes.
