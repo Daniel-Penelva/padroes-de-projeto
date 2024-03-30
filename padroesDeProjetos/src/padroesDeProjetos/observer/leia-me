@@ -15,3 +15,7 @@ notificar o observador sobre a mudança de temperatura.
 2º - Criar a classe Sujeito que representa o objeto observável. A classe Sujeito mantém uma lista de observadores e um valor de temperatura. 
 Ela possui métodos para adicionar e remover observadores, além de um método setTemperatura() que atualiza a temperatura e chama o método 
 notificarObservadores() para notificar todos os observadores sobre a mudança.
+
+3º - Criar a classe Dispositivo que implementa a interface Observador. A classe Dispositivo implementa o método atualizar(), que é chamado 
+pelo sujeito observável quando a temperatura é atualizada. Neste exemplo, o dispositivo apenas imprime uma mensagem com o nome do 
+dispositivo e a temperatura atualizada.
