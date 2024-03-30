@@ -1,0 +1,24 @@
+State
+
+State permite que um objeto altere seu comportamento quando seu estado interno muda. O objeto parecerá ter mudado de classe.
+
+Para simplificar imagina uma máquina de venda automática que vende bebidas, e o estado da máquina muda dependendo das ações do usuário 
+(por exemplo, inserir moeda, selecionar uma bebida, etc.), logo vamos gerenciar esses estados.
+
+1º - EstadoMaquina (Interface):
+     Esta é a interface que define os métodos que representam os diferentes estados da máquina de venda automática: inserirMoeda(), 
+     selecionarBebida() e dispensar(). Cada estado concreto implementará esses métodos de acordo com o comportamento desejado.
+     
+2º - MaquinaDeVenda (Classe principal):
+	 Esta classe representa a máquina de venda automática.
+	 Ela possui referências para os diferentes estados da máquina (estadoSemMoeda, estadoComMoeda, estadoVendido) e mantém uma referência 
+	 para o estado atual.
+	 Fornece métodos públicos para as ações que um usuário pode realizar na máquina, como inserirMoeda(), selecionarBebida() e dispensar().
+	 Também fornece métodos para obter e definir o estado atual da máquina.
+
+
+EstadoSemMoeda, EstadoComMoeda, EstadoVendido (Implementações concretas de EstadoMaquina):
+	 Essas classes representam os diferentes estados da máquina de venda automática. Cada classe implementa os métodos definidos na 
+	 interface EstadoMaquina, de acordo com o comportamento esperado para o estado correspondente.
+	 Por exemplo, EstadoSemMoeda define o comportamento quando nenhuma moeda foi inserida, EstadoComMoeda define o comportamento quando uma 
+	 moeda foi inserida e EstadoVendido define o comportamento quando a bebida está sendo dispensada.
