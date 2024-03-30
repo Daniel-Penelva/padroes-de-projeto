@@ -1,0 +1,17 @@
+Observer (Observador)
+
+Observer define uma dependência um-para-muitos entre objetos, de modo que, quando um objeto muda de estado, todos os seus dependentes são 
+notificados e atualizados automaticamente.
+
+O padrão Observer é um padrão de projeto comportamental que define uma relação de dependência um-para-muitos entre objetos. Quando o estado 
+de um objeto é alterado, todos os seus dependentes são notificados automaticamente e atualizados.
+
+Para exemplificar, suponha que temos um sistema de monitoramento de temperatura, onde múltiplos dispositivos desejam ser notificados quando 
+a temperatura atinge um limite definido.
+
+1º - Definindo a interface Observador. A interface Observador define o método atualizar(), que é chamado pelo sujeito observável para 
+notificar o observador sobre a mudança de temperatura.
+
+2º - Criar a classe Sujeito que representa o objeto observável. A classe Sujeito mantém uma lista de observadores e um valor de temperatura. 
+Ela possui métodos para adicionar e remover observadores, além de um método setTemperatura() que atualiza a temperatura e chama o método 
+notificarObservadores() para notificar todos os observadores sobre a mudança.
